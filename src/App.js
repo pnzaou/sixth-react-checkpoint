@@ -31,7 +31,7 @@ function App() {
   };
 
   const handleEditTask = (task) => {
-    setCurrentTask(task);
+    setCurrentTask(task); 
   };
 
   const handleDeleteTask = (task) => {

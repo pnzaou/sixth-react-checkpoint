@@ -10,8 +10,8 @@ const TaskForm = ({ task, onSave }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (name && description) {
-        onSave({ ...task, name, description });
-        setName('');
+        onSave({ ...task, name, description }); //cette ligne permet à la fois de gerer l'ajout et la modification
+        setName(''); //ici j'efface le contenu des inputs 
         setDescription('');
         }
     };
